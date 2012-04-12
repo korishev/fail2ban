@@ -213,7 +213,7 @@ maxretry = 6
 
 [wuftpd]
 
-enabled  = <%= node["fail2ban"]["wuftp-enable"] %>
+enabled  = <%= node["fail2ban"]["wuftpd-enable"] %>
 port     = ftp,ftp-data,ftps,ftps-data
 filter   = wuftpd
 logpath  = /var/log/auth.log
